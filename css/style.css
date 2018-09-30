@@ -1987,16 +1987,9 @@ html {
     align-self: stretch !important; } }
 
 /*# sourceMappingURL=bootstrap-grid.css.map */
-/*
-
-
-*/
 html {
   font-family: "Open Sans", sans-serif;
   color: #fff; }
-
-body {
-  background-color: red; }
 
 a {
   text-decoration: none; }

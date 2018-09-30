@@ -1,0 +1,45 @@
+Ogólne zasady 
+
+-----------------------------------------------------------------------------------
+
+
+-------------------
+	GIT
+-------------------
+
+
+- Ka¿dy pracuje nad zadaniem na swoim branchu, je¿eli ja robie np.Menu to tworze sobie brancha 'Menu'
+i na nim pracuje. (git branch nazwaBrancha) - tworzy branch (git checkout nazwaBrancha) - prze³¹czamy siê na odpowiedni branch
+
+-------------------
+	SASS
+-------------------
+
+- Css piszemy u¿ywaj¹c scss, mamy folder sass gdzie utworzona jest wstêpna struktura :
+  - style.scss ten plik jest kompilowany do css tutaj impoutujemy inne pliki scss
+  - variables.scss plik do trzymania zmiennych je¿eli bêd¹ u¿ywane
+  - normalize.scss tworzy wspólne style dla przegl¹darek
+  - mixins.scss tutaj tworzymy mixiny , stworzy³em u³atwiaj¹ce korzystanie z media query (jak korzystaæ z tego gdzieœ ni¿ej bêdzie)
+  - components.scss je¿eli na stronie s¹ jakieœ wspólne potwtarzaj¹ce elementy np.zielony button to tutaj je umieszczamy
+  - bootstrap-grid.scss grid z bootstrapa którego bêdziemy u¿ywaæ https://getbootstrap.com/docs/4.0/layout/grid/
+  - base.scss bardzo podstawowe style dla naszej strony
+- Mamy jeszcze folder dla ka¿dego i w swoim folderze ka¿dy dodaje pliki scss nad którymi pracuje (np.robie menu tworze plik _menu.scss i tam styluje)
+- Trzeba pamiêtaæ , ¿e kazdy nowo utworzony plik scss trzeba zaimportowaæ w style.scss (pamiêtajcie o odpowiedniej œcie¿ce imporutj¹c z 
+  swojego folderu @import 'zloty/menu' )
+
+
+
+
+-------------------
+	RWD
+-------------------
+
+- Stosujemy podejœcie mobile first czyli tworzymy najpierw style dla telefonów potem wiêksze rozdzielczoœci
+- Tak u¿ywamy klas container > row > col 
+- 
+
+
+
+
+
+

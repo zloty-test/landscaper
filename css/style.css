@@ -1989,10 +1989,11 @@ html {
 /*# sourceMappingURL=bootstrap-grid.css.map */
 html {
   font-family: "Open Sans", sans-serif;
-  color: #fff; }
+  color: #666666; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #fff; }
 
 img {
   max-width: 100%; }
@@ -2002,3 +2003,36 @@ ul {
 
 li {
   list-style: none; }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #333333;
+  z-index: 100; }
+
+.menu {
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between; }
+  .menu__logo {
+    font-size: 26px;
+    font-weight: 600; }
+    .menu__logo a {
+      color: #eee; }
+  .menu-btn {
+    background-color: transparent;
+    border: 1px solid #fff;
+    display: block;
+    color: blue;
+    padding: 9px; }
+    .menu-btn__line {
+      display: block;
+      width: 22px;
+      height: 2px;
+      border-radius: 1px;
+      background-color: #888; }
+      .menu-btn__line--central {
+        margin-top: 4px;
+        margin-bottom: 4px; }

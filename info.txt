@@ -1,43 +1,58 @@
-Og�lne zasady 
+Ogólne zasady 
 
 -----------------------------------------------------------------------------------
 
 
 -------------------
-	GIT
+	GIT / GITHUB
 -------------------
 
-
-- Ka�dy pracuje nad zadaniem na swoim branchu, je�eli ja robie np.Menu to tworze sobie brancha 'Menu'
-i na nim pracuje. (git branch nazwaBrancha) - tworzy branch (git checkout nazwaBrancha) - prze��czamy si� na odpowiedni branch
+-Generalnie teraz github jest ustawiony tak , że każdy z nas może wszystko zmieniać na masterze
+- Dlatego każdy pracuje nad zadaniem na swoim branchu, jeżeli ja robie np.Menu to tworze sobie brancha 'Menu'
+i na nim pracuje. (git branch nazwaBrancha) - tworzy branch (git checkout nazwaBrancha) - przełączamy się na odpowiedni branch
+- Jak skończymy robimy merge na master (przełącz się na mastetra i wtedy git merge nazwaBrancha)
+- Jeżeli pracowałeś tylko na swoich plikach sass i html tylko nad swoim zadaniem to nie powinno być konfliktów jak będzie to trzeba rozwiązać tak żeby nie rozwalić strony najlepiej je przedyskutować
+- Jak juz wszystko dobrze przejdzie na mastera i nic więcej nie bedzie poprawiane to można usunąc branch (ja nie usuwałem jeszcze menu bo będę poprawiał menu jeszcze)
+- Co do commitów to jak widzicie moje są po polsku i beznadziejne , także jak macie fajny link jak pisać commity to możecie wysłać
+- Te pliki niepotrzebne.txt wstawiłem tylko po to żeby foldery nie były wasze puste bo jak są puste to github je ignoruje
 
 -------------------
 	SASS
 -------------------
 
-- Css piszemy u�ywaj�c scss, mamy folder sass gdzie utworzona jest wst�pna struktura :
+- Nie wiem jak kompilujecie sass ja używam gulpa śledze wszystkie pliki scss w folderze sass i kompiluje do folderu css do pliku style.css tylko , że ten plik style.css tworzy się automatycznie i tu może być problem. Dlatego jak będzie jakiś problem z kompilacją i nie będziecie mogli go rozwiązać to najwyżej skorzystacie z identycznych ustawien jak ja mam w gulpie i będzie ok. 
+- Css piszemy używając scss, mamy folder sass gdzie utworzona jest wstępna struktura :
   - style.scss ten plik jest kompilowany do css tutaj impoutujemy inne pliki scss
-  - variables.scss plik do trzymania zmiennych je�eli b�d� u�ywane
-  - normalize.scss tworzy wsp�lne style dla przegl�darek
-  - mixins.scss tutaj tworzymy mixiny , stworzy�em u�atwiaj�ce korzystanie z media query (jak korzysta� z tego gdzie� ni�ej b�dzie)
-  - components.scss je�eli na stronie s� jakie� wsp�lne potwtarzaj�ce elementy np.zielony button to tutaj je umieszczamy
-  - bootstrap-grid.scss grid z bootstrapa kt�rego b�dziemy u�ywa� https://getbootstrap.com/docs/4.0/layout/grid/
+  - variables.scss plik do trzymania zmiennych jeżeli będą używane
+  - normalize.scss tworzy wspólne style dla przeglądarek
+  - mixins.scss tutaj tworzymy mixiny , stworzyłem ułatwiające korzystanie z media query (jak korzystać z tego gdzieś niżej będzie)
+  - components.scss jeżeli na stronie są jakieś wspólne potwtarzające elementy np.zielony button to tutaj je umieszczamy
+  - bootstrap-grid.scss grid z bootstrapa którego będziemy używać https://getbootstrap.com/docs/4.0/layout/grid/
   - base.scss bardzo podstawowe style dla naszej strony
-- Mamy jeszcze folder dla ka�dego i w swoim folderze ka�dy dodaje pliki scss nad kt�rymi pracuje (np.robie menu tworze plik _menu.scss i tam styluje)
-- Trzeba pami�ta� , �e kazdy nowo utworzony plik scss trzeba zaimportowa� w style.scss (pami�tajcie o odpowiedniej �cie�ce imporutj�c z 
+- Mamy jeszcze folder dla każdego i w swoim folderze każdy dodaje pliki scss nad którymi pracuje (np.robie menu tworze plik _menu.scss i tam styluje)
+- Trzeba pamiętać , że kazdy nowo utworzony plik scss trzeba zaimportować w style.scss (pamiętajcie o odpowiedniej ścieżce imporutjąc z 
   swojego folderu @import 'zloty/menu' )
-
-
-
 
 -------------------
 	RWD
 -------------------
 
-- Stosujemy podej�cie mobile first czyli tworzymy najpierw style dla telefon�w potem wi�ksze rozdzielczo�ci
-- Tak u�ywamy klas container > row > col 
-- 
+- Stosujemy podejście mobile first czyli tworzymy najpierw style dla telefonów potem większe rozdzielczości
+- Jak korzystamy z grida z bootsrapa to tak container > row > col 
+- Do zapytan medialnych możecie korzystać z mixinów czyli @include screen(sm) {style } w miejsce sm można dać inny breakpoint sm md lg xl , a jak wam więcej potrzeba to możecie w mixinx.scss dopisać
+- Staramy się stosować BEM tutaj dokumentacja https://en.bem.info/methodology/quick-start/ ja jej jeszce nie czytałem dlatego nie radzę się sugerować moim klasami ;p 
+- W sass fajne piszę się klasy bem .block { &__element{ } } da nam .block i  .block__element. 
 
+
+
+-------------------------------
+	Najważniejsze !
+-------------------------------
+
+- Strasznie nie chciało mi się tego pisać dlatego pisałem to na szybkości więc nie zwracajcie uwagi na błędy
+- Pytajacie na czacie 
+- To jest nasz pierwszy projekt dlatego będzie pewnie masa błędów problemów itd , najważniejsze żeby udało nam się go wgl skonczyć to i tak będzie zajebiście
+- Następnym razem jak coś będziemy robić to to lepiej przemyślimy dlatego to jest dla treningu , szczególnie githuba trzeba będzie zrobić tak , że tylko jedna osoba może zatwierdzać zmiany na mastera wtedy na więcej osób można działać
 
 
 

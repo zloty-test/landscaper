@@ -1,7 +1,11 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
 
 html {
     font-family: "Open Sans", sans-serif;
-    color:rgb(102, 102, 102);
+    color:#666666;
 }
 
 a {

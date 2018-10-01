@@ -25,17 +25,43 @@
         display: block;
         color: blue;
         padding: 9px;
+        transition: background-color .3s, border-color .3s;
         &__line {
             display: block;
             width: 22px;
             height: 2px;
             border-radius: 1px;
             background-color: #888;
+            transition: background-color .3s;
             &--central {
                 margin-top: 4px;
                 margin-bottom: 4px;
             }
         }
+        &:hover {
+            background-color:#fff;
+        }
+        &:hover &__line {
+            background-color: #6aaf08;
+        }
     }
-
+    &-content {
+        display: none;
+        &__item {
+            margin-top: 5px;
+            & a {
+                display: block;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                font-size: 15px;
+                text-transform: uppercase;
+                color: #ddd;
+                transition: color .2s;
+                &:hover {
+                    color: #6aaf08;
+                }
+            }
+        }
+    }
+   
 }

@@ -1987,6 +1987,9 @@ html {
     align-self: stretch !important; } }
 
 /*# sourceMappingURL=bootstrap-grid.css.map */
+*, ::before, ::after {
+  box-sizing: border-box; }
+
 html {
   font-family: "Open Sans", sans-serif;
   color: #666666; }
@@ -2003,6 +2006,16 @@ ul {
 
 li {
   list-style: none; }
+
+.btn {
+  background-color: #6aaf08;
+  border: none;
+  border-radius: 6px;
+  padding: 15px 21px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 400; }
 
 .nav {
   position: fixed;
@@ -2026,13 +2039,52 @@ li {
     border: 1px solid #fff;
     display: block;
     color: blue;
-    padding: 9px; }
+    padding: 9px;
+    transition: background-color .3s, border-color .3s; }
     .menu-btn__line {
       display: block;
       width: 22px;
       height: 2px;
       border-radius: 1px;
-      background-color: #888; }
+      background-color: #888;
+      transition: background-color .3s; }
       .menu-btn__line--central {
         margin-top: 4px;
         margin-bottom: 4px; }
+    .menu-btn:hover {
+      background-color: #fff; }
+    .menu-btn:hover .menu-btn__line {
+      background-color: #6aaf08; }
+  .menu-content {
+    display: none; }
+    .menu-content__item {
+      margin-top: 5px; }
+      .menu-content__item a {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-size: 15px;
+        text-transform: uppercase;
+        color: #ddd;
+        transition: color .2s; }
+        .menu-content__item a:hover {
+          color: #6aaf08; }
+
+.intro {
+  min-height: 100vh;
+  background: url(../../assets/img/intro-bg.jpg) top center no-repeat;
+  background-size: cover; }
+  .intro--overlay {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(112, 173, 71, 0.4) 100%); }
+  .intro__content {
+    margin-top: 66px;
+    text-align: center;
+    color: #fff; }
+  .intro__heading {
+    font-weight: 700;
+    font-size: 40px;
+    text-transform: uppercase; }
+  .intro__text {
+    font-size: 20px;
+    font-weight: 400; }

@@ -7,4 +7,8 @@
     letter-spacing: 1px;
     font-size: 17px;
     font-weight: 400;
+    transition: background-color .3s;
+    &:hover {
+        background-color: #5f9d07;
+    }
 }

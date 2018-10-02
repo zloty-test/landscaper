@@ -2103,7 +2103,7 @@ li {
 .intro {
   height: 100vh;
   max-height: 830px;
-  background: url(../../assets/img/intro-bg.jpg) top center no-repeat;
+  background: url(../assets/img/intro-bg.jpg) top center no-repeat;
   background-size: cover; }
   .intro--overlay {
     height: 100vh;
